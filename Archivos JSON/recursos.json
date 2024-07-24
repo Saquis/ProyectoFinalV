@@ -1,0 +1,51 @@
+{
+    "articulos": [
+      {
+        "titulo": "Introducción a la IA",
+        "descripcion": "Una guía completa para principiantes sobre los conceptos básicos de la IA.",
+        "enlace": "https://cloud.google.com/learn/what-is-artificial-intelligence?hl=es-419"
+      },
+      {
+        "titulo": "Avances recientes en la IA",
+        "descripcion": "Explora los últimos avances y tendencias en inteligencia artificial.",
+        "enlace": "https://cloud.google.com/learn/what-is-artificial-intelligence?hl=es-419#artificial-intelligence-training-models"
+      }
+    ],
+    "libros": [
+      {
+        "titulo": "Inteligencia Artificial: Un Enfoque Moderno",
+        "descripcion": "Un libro de referencia sobre IA escrito por Stuart Russell y Peter Norvig.",
+        "enlace": "https://ejemplo.com/libro1"
+      },
+      {
+        "titulo": "Deep Learning",
+        "descripcion": "Un libro fundamental sobre aprendizaje profundo escrito por Ian Goodfellow, Yoshua Bengio y Aaron Courville.",
+        "enlace": "https://ejemplo.com/libro2"
+      }
+    ],
+    "cursos": [
+      {
+        "titulo": "Curso de IA de Coursera",
+        "descripcion": "Un curso online sobre IA ofrecido por la Universidad de Stanford en Coursera.",
+        "enlace": "https://ejemplo.com/curso1"
+      },
+      {
+        "titulo": "Curso de Machine Learning de Udacity",
+        "descripcion": "Un curso online sobre machine learning ofrecido por Udacity.",
+        "enlace": "https://ejemplo.com/curso2"
+      }
+    ],
+    "herramientas": [
+      {
+        "titulo": "TensorFlow",
+        "descripcion": "Una biblioteca de código abierto para el aprendizaje automático.",
+        "enlace": "https://ejemplo.com/herramienta1"
+      },
+      {
+        "titulo": "PyTorch",
+        "descripcion": "Una biblioteca de aprendizaje automático basada en Python.",
+        "enlace": "https://ejemplo.com/herramienta2"
+      }
+    ]
+  }
+  

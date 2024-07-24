@@ -1,0 +1,21 @@
+{
+    "faq": [
+      {
+        "pregunta": "¿Qué es la inteligencia artificial?",
+        "respuesta": "La inteligencia artificial es una rama de la informática que se enfoca en la creación de sistemas capaces de realizar tareas que normalmente requieren de la inteligencia humana."
+      },
+      {
+        "pregunta": "¿Cómo funciona el aprendizaje automático?",
+        "respuesta": "El aprendizaje automático funciona mediante el desarrollo de algoritmos que pueden aprender y hacer predicciones sobre datos."
+      },
+      {
+        "pregunta": "¿Qué es una red neuronal?",
+        "respuesta": "Una red neuronal es un conjunto de algoritmos diseñados para reconocer patrones, que interpreta datos sensoriales a través de una especie de percepción automática, etiquetando o agrupando los datos brutos."
+      },
+      {
+        "pregunta": "¿Qué es el procesamiento del lenguaje natural?",
+        "respuesta": "El procesamiento del lenguaje natural es una rama de la IA que se ocupa de la interacción entre las computadoras y el lenguaje humano, permitiendo a las máquinas entender, interpretar y responder en lenguaje natural."
+      }
+    ]
+  }
+  

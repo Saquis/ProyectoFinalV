@@ -1,0 +1,148 @@
+/* Estilos Globales */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-image: url('../Imagenes/imgfondo3.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+}
+
+/* Barra de Navegación */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar-brand img {
+  height: 100px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: aqua;
+}
+
+/* Sección Hero */
+.hero-section {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-section h1,
+.hero-section p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+}
+
+/* Pie de Página */
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #ffd700;
+}
+
+/* Videos Embebidos */
+.embed-responsive {
+  margin-bottom: 20px;
+}
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Estilos de Secciones */
+section {
+  margin-bottom: 40px;
+}
+
+section h2, section h3 {
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+section p {
+  margin-bottom: 20px;
+  color: #D3D3D3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+section img {
+  border: 2px solid #ffd700;
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+}
+
+/* Carrusel */
+.carousel-item {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.carousel-item img {
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  height: auto;
+  max-height: 400px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}

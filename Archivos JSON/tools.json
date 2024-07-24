@@ -1,0 +1,21 @@
+{
+    "tools": [
+      {
+        "name": "Calculadora de IA Básica",
+        "description": "Una calculadora que muestra operaciones básicas utilizando conceptos de IA."
+      },
+      {
+        "name": "Chatbot Interactivo",
+        "description": "Un chatbot que responde a preguntas básicas sobre IA."
+      },
+      {
+        "name": "Visualización de Datos",
+        "description": "Herramientas para visualizar datos de manera interactiva."
+      },
+      {
+        "name": "Simulación de Redes Neuronales",
+        "description": "Simulador que muestra cómo funcionan las redes neuronales."
+      }
+    ]
+  }
+  
