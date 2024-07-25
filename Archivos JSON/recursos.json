@@ -15,36 +15,36 @@
       {
         "titulo": "Inteligencia Artificial: Un Enfoque Moderno",
         "descripcion": "Un libro de referencia sobre IA escrito por Stuart Russell y Peter Norvig.",
-        "enlace": "https://ejemplo.com/libro1"
+        "enlace": "https://proassetspdlcom.cdnstatics2.com/usuaris/libros_contenido/arxius/40/39307_Inteligencia_artificial.pdf"
       },
       {
         "titulo": "Deep Learning",
         "descripcion": "Un libro fundamental sobre aprendizaje profundo escrito por Ian Goodfellow, Yoshua Bengio y Aaron Courville.",
-        "enlace": "https://ejemplo.com/libro2"
+        "enlace": "https://iaarbook.github.io/deeplearning/"
       }
     ],
     "cursos": [
       {
         "titulo": "Curso de IA de Coursera",
         "descripcion": "Un curso online sobre IA ofrecido por la Universidad de Stanford en Coursera.",
-        "enlace": "https://ejemplo.com/curso1"
+        "enlace": "https://www.coursera.org/professional-certificates/google-digital-marketing-ecommerce?utm_medium=sem&utm_source=bg&utm_campaign=B2C_LATAM_google-digital-marketing-ecommerce_google_FTCOF_professional-certificates_countrygroup-2&campaignid=662743825&adgroupid=1243548966359121&device=c&keyword=https%3A%2F%2Fwww.coursera.org%2Fprofessional-certificates%2Fgoogle-digital-marketing-ecommerce&matchtype=b&network=o&devicemodel=&adposition=&creativeid=&hide_mobile_promo&msclkid=dc3526c0eb671efe4d19406245a13739&utm_term=https%3A%2F%2Fwww.coursera.org%2Fprofessional-certificates%2Fgoogle-digital-marketing-ecommerce&utm_content=15%20-%20Google%20Digital%20Marketing%20and%20Ecomm%20-%20US%20-%20dynamic%20ad%20group"
       },
       {
         "titulo": "Curso de Machine Learning de Udacity",
         "descripcion": "Un curso online sobre machine learning ofrecido por Udacity.",
-        "enlace": "https://ejemplo.com/curso2"
+        "enlace": "https://anayamultimedia.es/primer_capitulo/aprende-machine-learning-con-scikit-learn-keras-y-tensorflow-tercera-edicion.pdf"
       }
     ],
     "herramientas": [
       {
         "titulo": "TensorFlow",
         "descripcion": "Una biblioteca de código abierto para el aprendizaje automático.",
-        "enlace": "https://ejemplo.com/herramienta1"
+        "enlace": "https://www.tensorflow.org/api_docs/python/tf"
       },
       {
         "titulo": "PyTorch",
         "descripcion": "Una biblioteca de aprendizaje automático basada en Python.",
-        "enlace": "https://ejemplo.com/herramienta2"
+        "enlace": "https://pytorch.org/"
       }
     ]
   }

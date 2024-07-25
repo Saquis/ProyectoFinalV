@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Traducir las etiquetas de los resultados
   function translateLabel(label) {
     const translations = {
-      'lighter, light, igniter, ignitor': 'encendedor, luz, encendedor, ignitor',
+      'lighter, light, igniter, ignitor': 'perro, luz, encendedor, ignitor',
       'beer glass': 'vaso de cerveza',
       'toilet tissue, toilet paper, bathroom tissue': 'papel higiénico, papel de baño',
       // Añade más traducciones aquí según sea necesario
