@@ -1,0 +1,175 @@
+/* Estilos Globales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('../Imagenes/imgfondo3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+  }
+  
+  /* Barra de Navegación */
+  .navbar {
+    background-color: #ffffff;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .navbar-brand img {
+    height: 100px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000000;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffd700;
+  }
+  
+  /* Sección Hero */
+  .hero-section {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-section h1,
+  .hero-section p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+  }
+  
+  /* Pie de Página */
+  footer {
+    background-color: aquamarine !important;
+    padding: 10px 0 !important;
+  }
+  
+  footer p {
+    margin: 0 !important;
+    color: #000000 !important;
+  }
+  
+  footer .social-icons a {
+    color: #000000 !important;
+    margin: 0 10px !important;
+    transition: color 0.3s !important;
+  }
+  
+  footer .social-icons a:hover {
+    color: #ffd700 !important;
+  }
+  
+  /* Videos Embebidos */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 10px;
+  }
+  
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Estilos de Secciones */
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2, section h3 {
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  section p {
+    margin-bottom: 20px;
+    color: #D3D3D3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  section img {
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+  }
+  
+  /* Carrusel */
+  .carousel-item {
+    padding: 30px;
+    background-color: rgba(250, 248, 248, 0.6);
+    border-radius: 10px;
+    color: #0c0a0a;
+  }
+  
+  .carousel-item img {
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    height: auto;
+    max-height: 400px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
+  
+ /* Estilos Responsivos */
+ @media (max-width: 768px) {
+    .navbar-brand img {
+      max-height: 50px; /* Reducir tamaño del logo en dispositivos pequeños */
+    }
+  
+    .hero-section {
+      height: 40vh; /* Reducir altura de la sección hero en dispositivos pequeños */
+    }
+  
+    .carousel-item img {
+      width: 100%; /* Ajustar tamaño de imágenes en el carrusel en dispositivos pequeños */
+      max-height: 300px; /* Reducir altura máxima de imágenes en el carrusel en dispositivos pequeños */
+    }
+  
+    .section img {
+      width: 100%; /* Ajustar tamaño de imágenes en secciones en dispositivos pequeños */
+    }
+  }
+  

@@ -1,203 +1,203 @@
 /* Estilos Globales */
 body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background-image: url('../Imagenes/imgfondo3.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: #fff;
+  font-family: 'Arial', sans-serif; /* Fuente Arial para todo el cuerpo */
+  line-height: 1.6; /* Altura de línea */
+  background-image: url('../Imagenes/imgfondo3.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Cubrir toda la pantalla */
+  background-attachment: fixed; /* Fondo fijo */
+  background-position: center; /* Centrar el fondo */
+  color: #fff; /* Color de texto blanco */
 }
 
 /* Barra de Navegación */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
 }
 
 .navbar-brand {
-  display: flex;
-  align-items: center;
-  padding: 0;
+  display: flex; /* Usar flexbox para alinear elementos */
+  align-items: center; /* Alinear elementos en el centro verticalmente */
+  padding: 0; /* Sin padding */
 }
 
 .navbar-brand img {
-  height: 50px;
+  height: 50px; /* Altura del logo */
 }
 
 .navbar-nav .nav-link {
-  color: #fff;
-  margin-right: 15px;
-  transition: color 0.3s;
+  color: #fff; /* Color de los enlaces de navegación blanco */
+  margin-right: 15px; /* Margen derecho de 15px */
+  transition: color 0.3s; /* Transición suave del color */
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffd700;
+  color: #ffd700; /* Color dorado al pasar el ratón */
 }
 
 /* Sección Hero */
 .hero-section {
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  height: 60vh; /* Altura del 60% de la ventana */
+  background-size: cover; /* Cubrir toda la pantalla */
+  background-position: center; /* Centrar el fondo */
+  display: flex; /* Usar flexbox para alinear elementos */
+  align-items: center; /* Alinear elementos en el centro verticalmente */
+  justify-content: center; /* Alinear elementos en el centro horizontalmente */
+  flex-direction: column; /* Dirección de los elementos en columna */
+  text-align: center; /* Alinear texto al centro */
 }
 
 .hero-section h1,
 .hero-section p {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+  padding: 10px; /* Padding alrededor del texto */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 .hero-section h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: #FFFFFF;
+  font-size: 3rem; /* Tamaño de fuente grande */
+  margin-bottom: 0.5rem; /* Margen inferior */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  color: #FFFFFF; /* Color de texto blanco */
 }
 
 .hero-section p {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  color: #FFFFFF;
+  font-size: 1.25rem; /* Tamaño de fuente */
+  margin-bottom: 1rem; /* Margen inferior */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  color: #FFFFFF; /* Color de texto blanco */
 }
 
 /* Caja de Contenido */
 .content-box {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+  padding: 15px; /* Padding alrededor del contenido */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 20px; /* Margen inferior */
 }
 
 /* Pie de Página */
 footer {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo negro con opacidad */
+  padding: 10px 0; /* Padding superior e inferior */
 }
 
 footer p {
-  margin: 0;
+  margin: 0; /* Sin margen */
 }
 
 footer .social-icons a {
-  color: #fff;
-  margin: 0 10px;
-  transition: color 0.3s;
+  color: #fff; /* Color de iconos sociales blanco */
+  margin: 0 10px; /* Margen horizontal de 10px */
+  transition: color 0.3s; /* Transición suave del color */
 }
 
 footer .social-icons a:hover {
-  color: #ffd700;
+  color: #ffd700; /* Color dorado al pasar el ratón */
 }
 
 /* Videos Embebidos */
 .embed-responsive {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Margen inferior */
 }
 
 .embed-responsive-16by9 {
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
+  max-width: 100%; /* Ancho máximo del 100% */
+  height: auto; /* Altura automática */
+  display: block; /* Mostrar como bloque */
+  margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
 }
 
 /* Estilos de Secciones */
 section {
-  margin-bottom: 40px;
+  margin-bottom: 40px; /* Margen inferior */
 }
 
 section h2, section h3 {
-  color: #ffd700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  color: #ffd700; /* Color de encabezados dorado */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto */
 }
 
 section p {
-  margin-bottom: 20px;
-  color: #D3D3D3;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px; /* Margen inferior */
+  color: #D3D3D3; /* Color de texto gris claro */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto */
 }
 
 section img {
-  border: 2px solid #ffd700;
-  border-radius: 10px;
-  width: 50%;
-  height: auto;
+  border: 2px solid #ffd700; /* Borde dorado */
+  border-radius: 10px; /* Bordes redondeados */
+  width: 50%; /* Ancho del 50% */
+  height: auto; /* Altura automática */
 }
 
 /* Carrusel */
 .carousel-item {
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  color: #fff;
+  padding: 30px; /* Padding alrededor del contenido */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con opacidad */
+  border-radius: 10px; /* Bordes redondeados */
+  color: #fff; /* Color de texto blanco */
 }
 
 .carousel-item img {
-  border: none;
-  border-radius: 0;
-  width: 75%;
-  height: auto;
-  max-height: 400px;
+  border: none; /* Sin borde */
+  border-radius: 0; /* Sin bordes redondeados */
+  width: 75%; /* Ancho del 75% */
+  height: auto; /* Altura automática */
+  max-height: 400px; /* Altura máxima de 400px */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(1);
+  filter: invert(1); /* Invertir colores */
 }
 
 /* Chatbot */
 #chat-container {
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 20px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.2); /* Fondo negro con opacidad */
+  padding: 10px; /* Padding alrededor del contenido */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-top: 20px; /* Margen superior */
+  max-width: 600px; /* Ancho máximo de 600px */
+  margin-left: auto; /* Centrado horizontalmente */
+  margin-right: auto; /* Centrado horizontalmente */
 }
 
 .chat-box {
-  max-height: 300px;
-  overflow-y: auto;
-  margin-bottom: 10px;
-  background-color: #1c1c1c;
-  padding: 10px;
-  border-radius: 10px;
+  max-height: 300px; /* Altura máxima de 300px */
+  overflow-y: auto; /* Scroll vertical */
+  margin-bottom: 10px; /* Margen inferior */
+  background-color: #1c1c1c; /* Fondo oscuro */
+  padding: 10px; /* Padding alrededor del contenido */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 .chat-message {
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 10px;
+  margin: 5px 0; /* Margen superior e inferior de 5px */
+  padding: 10px; /* Padding alrededor del contenido */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 .chat-message.user {
-  background-color: #007bff;
-  color: #fff;
-  align-self: flex-end;
+  background-color: #007bff; /* Fondo azul */
+  color: #fff; /* Color de texto blanco */
+  align-self: flex-end; /* Alinear al final horizontalmente */
 }
 
 .chat-message.bot {
-  background-color: #6c757d;
-  color: #fff;
-  align-self: flex-start;
+  background-color: #6c757d; /* Fondo gris oscuro */
+  color: #fff; /* Color de texto blanco */
+  align-self: flex-start; /* Alinear al inicio horizontalmente */
 }
 
 #chat-input {
-  width: 100%;
-  border-radius: 10px;
+  width: 100%; /* Ancho completo */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 #send-btn {
-  width: 100%;
+  width: 100%; /* Ancho completo */
 }

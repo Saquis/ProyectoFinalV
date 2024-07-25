@@ -6,23 +6,23 @@
   <title>Aplicaciones de IA</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="stylesheet" href="Archivos CSS/py.css">
+  <link rel="stylesheet" href="CSS/aplicaciones.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <a class="navbar-brand" href="index.html"><img src="Imagenes/recursos img/imglogo.jpg" alt="Logo IA"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="acercade.html">Sobre IA</a></li>
-          <li class="nav-item"><a class="nav-link" href="aplicaciones.html">Aplicaciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
-          <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="acercade.html">Sobre IA</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="aplicaciones.html">Aplicaciones</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="recursos.html">Recursos</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="contactos.html">Contacto</a></li>
         </ul>
       </div>
     </nav>
@@ -77,14 +77,14 @@
             <li>Modelos de procesamiento de lenguaje natural</li>
           </ul>
           <h3>Videos de Referencia</h3>
-          <div class="embed-responsive embed-responsive-16by9 mb-4">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tPYj3fFJGjk" allowfullscreen></iframe>
+          <div class="video-container mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7xoyPejsmLs" allowfullscreen></iframe>
           </div>
-          <div class="embed-responsive embed-responsive-16by9 mb-4">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6g4O5UOH304" allowfullscreen></iframe>
+          <div class="video-container mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AYk1iMP5bN0" allowfullscreen></iframe>
           </div>
-          <div class="embed-responsive embed-responsive-16by9 mb-4">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xVP3BTiIqbQ" allowfullscreen></iframe>
+          <div class="video-container mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/isIUMKtj__I" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -98,12 +98,13 @@
       </a>
     </div>
   </main>
-  <footer class="bg-dark text-white text-center py-4">
+  <footer class="bg-aquamarine text-dark text-center py-4">
     <p>&copy; 2024 Inteligencia Artificial. Todos los derechos reservados.</p>
+    <p id="current-datetime"></p>
     <div class="social-icons">
-      <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="text-dark mx-2"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-dark mx-2"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-dark mx-2"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -112,6 +113,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init();
+
+    function updateDateTime() {
+      const now = new Date();
+      const formattedDate = now.toLocaleDateString('es-ES', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+      });
+      const formattedTime = now.toLocaleTimeString('es-ES');
+      document.getElementById('current-datetime').textContent = `${formattedDate}, ${formattedTime}`;
+    }
+
+    setInterval(updateDateTime, 1000); // Actualizar cada segundo
+    document.addEventListener('DOMContentLoaded', updateDateTime); // Actualizar al cargar la página
   </script>
 </body>
 </html>

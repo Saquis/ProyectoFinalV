@@ -11,7 +11,7 @@ body {
 
 /* Barra de Navegación */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+  background-color: #ffffff; /* Fondo blanco */
 }
 
 .navbar-brand {
@@ -33,13 +33,13 @@ body {
 }
 
 .navbar-nav .nav-link {
-  color: #fff; /* Color de los enlaces de navegación blanco */
+  color: #000000; /* Color de los enlaces de navegación negro */
   margin-right: 15px; /* Margen derecho */
   transition: color 0.3s; /* Transición de color */
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffd700; /* Color dorado al pasar el ratón */
+  color: #17a2b8; /* Color azul claro al pasar el ratón */
 }
 
 /* Sección Hero */
@@ -80,22 +80,23 @@ body {
 
 /* Pie de Página */
 footer {
-  background-color: rgba(0, 0, 0, 0.9); /* Fondo negro con opacidad */
-  padding: 10px 0; /* Padding superior e inferior */
+  background-color: aquamarine !important; /* Fondo aquamarine */
+  padding: 10px 0 !important; /* Padding superior e inferior */
 }
 
 footer p {
-  margin: 0; /* Sin margen */
+  margin: 0 !important; /* Sin margen */
+  color: #000000 !important; /* Color de texto negro */
 }
 
 footer .social-icons a {
-  color: #fff; /* Color de iconos sociales blanco */
-  margin: 0 10px; /* Margen horizontal */
-  transition: color 0.3s; /* Transición de color */
+  color: #ffffff !important; /* Color de iconos sociales blanco */
+  margin: 0 10px !important; /* Margen horizontal */
+  transition: color 0.3s !important; /* Transición de color */
 }
 
 footer .social-icons a:hover {
-  color: #ffd700; /* Color dorado al pasar el ratón */
+  color: #ffd700 !important; /* Color dorado al pasar el ratón */
 }
 
 /* Estilos de Secciones */

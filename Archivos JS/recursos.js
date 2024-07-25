@@ -1,44 +1,93 @@
-// Cargar el archivo JSON y mostrar los recursos
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('Archivos JSON/recursos.json')
-      .then(response => response.json())
-      .then(data => {
-        const articulosContent = document.getElementById('articulos-content');
-        const librosContent = document.getElementById('libros-content');
-        const cursosContent = document.getElementById('cursos-content');
-        const herramientasContent = document.getElementById('herramientas-content');
-  
-        data.articulos.forEach(item => {
-          const articuloItem = document.createElement('div');
-          articuloItem.classList.add('resource-item', 'mb-3', 'p-3', 'bg-dark', 'text-white', 'rounded');
-          articuloItem.innerHTML = `<h5>${item.titulo}</h5><p>${item.descripcion}</p><a href="${item.enlace}" target="_blank" class="btn btn-primary">Leer más</a>`;
-          articulosContent.appendChild(articuloItem);
-        });
-  
-        data.libros.forEach(item => {
-          const libroItem = document.createElement('div');
-          libroItem.classList.add('resource-item', 'mb-3', 'p-3', 'bg-dark', 'text-white', 'rounded');
-          libroItem.innerHTML = `<h5>${item.titulo}</h5><p>${item.descripcion}</p><a href="${item.enlace}" target="_blank" class="btn btn-primary">Leer más</a>`;
-          librosContent.appendChild(libroItem);
-        });
-  
-        data.cursos.forEach(item => {
-          const cursoItem = document.createElement('div');
-          cursoItem.classList.add('resource-item', 'mb-3', 'p-3', 'bg-dark', 'text-white', 'rounded');
-          cursoItem.innerHTML = `<h5>${item.titulo}</h5><p>${item.descripcion}</p><a href="${item.enlace}" target="_blank" class="btn btn-primary">Leer más</a>`;
-          cursosContent.appendChild(cursoItem);
-        });
-  
-        data.herramientas.forEach(item => {
-          const herramientaItem = document.createElement('div');
-          herramientaItem.classList.add('resource-item', 'mb-3', 'p-3', 'bg-dark', 'text-white', 'rounded');
-          herramientaItem.innerHTML = `<h5>${item.titulo}</h5><p>${item.descripcion}</p><a href="${item.enlace}" target="_blank" class="btn btn-primary">Leer más</a>`;
-          herramientasContent.appendChild(herramientaItem);
-        });
-      })
-      .catch(error => console.error('Error al cargar el archivo JSON:', error));
+  // Cargar el archivo JSON y mostrar los recursos
+  fetch('Archivos JSON/recursos.json')
+    .then(response => response.json())
+    .then(data => {
+      const articulosContent = document.getElementById('articulos-content');
+      const librosContent = document.getElementById('libros-content');
+      const herramientasContent = document.getElementById('herramientas-content');
+
+      data.articulos.forEach(item => {
+        const articuloItem = document.createElement('div');
+        articuloItem.classList.add('resource-item', 'mb-3', 'p-3', 'bg-dark', 'text-white', 'rounded');
+        articuloItem.innerHTML = `<h5>${item.titulo}</h5><p>${item.descripcion}</p><a href="${item.enlace}" target="_blank" class="btn btn-primary">Leer más</a>`;
+        articulosContent.appendChild(articuloItem);
+      });
+
+      data.libros.forEach(item => {
+        const libroItem = document.createElement('div');
+        libroItem.classList.add('resource-item', 'mb-3', 'p-3', 'bg-dark', 'text-white', 'rounded');
+        libroItem.innerHTML = `<h5>${item.titulo}</h5><p>${item.descripcion}</p><a href="${item.enlace}" target="_blank" class="btn btn-primary">Leer más</a>`;
+        librosContent.appendChild(libroItem);
+      });
+
+      data.herramientas.forEach(item => {
+        const herramientaItem = document.createElement('div');
+        herramientaItem.classList.add('resource-item', 'mb-3', 'p-3', 'bg-dark', 'text-white', 'rounded');
+        herramientaItem.innerHTML = `<h5>${item.titulo}</h5><p>${item.descripcion}</p><a href="${item.enlace}" target="_blank" class="btn btn-primary">Leer más</a>`;
+        herramientasContent.appendChild(herramientaItem);
+      });
+    })
+    .catch(error => console.error('Error al cargar el archivo JSON:', error));
+
+  // Variables globales
+  let net;
+
+  // Cargar el modelo de MobileNet
+  async function loadModel() {
+    net = await mobilenet.load();
+    console.log('Modelo cargado.');
+  }
+
+  loadModel();
+
+  // Manejar la carga de imágenes
+  document.getElementById('image-upload').addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const img = document.getElementById('uploaded-image');
+        img.src = e.target.result;
+        img.style.display = 'block';
+        document.getElementById('classify-btn').style.display = 'block';
+      };
+      reader.readAsDataURL(file);
+    }
   });
-  
+
+  // Clasificar la imagen cargada
+  document.getElementById('classify-btn').addEventListener('click', async function () {
+    const img = document.getElementById('uploaded-image');
+    const result = await net.classify(img);
+    displayResults(result);
+  });
+
+  // Mostrar los resultados de la clasificación
+  function displayResults(predictions) {
+    const resultsContainer = document.getElementById('result');
+    resultsContainer.innerHTML = '';
+
+    predictions.forEach(prediction => {
+      let translatedLabel = translateLabel(prediction.className);
+      const listItem = document.createElement('li');
+      listItem.textContent = `${translatedLabel} - ${(prediction.probability * 100).toFixed(2)}%`;
+      resultsContainer.appendChild(listItem);
+    });
+  }
+
+  // Traducir las etiquetas de los resultados
+  function translateLabel(label) {
+    const translations = {
+      'lighter, light, igniter, ignitor': 'encendedor, luz, encendedor, ignitor',
+      'beer glass': 'vaso de cerveza',
+      'toilet tissue, toilet paper, bathroom tissue': 'papel higiénico, papel de baño',
+      // Añade más traducciones aquí según sea necesario
+    };
+
+    return translations[label] || label;
+  }
+
   // Chatbot Interactivo
   document.getElementById('send-btn').addEventListener('click', function() {
     const chatInput = document.getElementById('chat-input');
@@ -52,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 1000);
     }
   });
-  
+
   function addMessage(message, type) {
     const chatBox = document.getElementById('chat-box');
     const messageElement = document.createElement('div');
@@ -67,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     if (lowerCaseMessage.includes('hola')) {
       return '¡Hola! ¿Cómo puedo ayudarte con la inteligencia artificial?';
-    } else if (lowerCaseMessage.includes('qué es ia')) {
+    } else if (lowerCaseMessage.includes('que es ia')) {
       return 'La inteligencia artificial (IA) es una rama de la informática que se enfoca en crear sistemas capaces de realizar tareas que normalmente requieren de la inteligencia humana.';
     } else if (lowerCaseMessage.includes('gracias')) {
       return '¡De nada! ¿Hay algo más en lo que pueda ayudarte?';
@@ -107,3 +156,4 @@ document.addEventListener('DOMContentLoaded', function () {
       return 'Lo siento, no entiendo tu pregunta. ¿Puedes intentar preguntar de otra manera?';
     }
   }
+});
